@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: linear-gradient(to bottom right, rgb(255, 40, 40),rgb(213, 43, 255));
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+.container{
+    height: 120vh;
+    width:100vw;
+    display: grid;
+    place-items: center;
+}
+
+@media screen and (max-width:600px) {
+    .container{
+       display: grid;
+       width: 100%; 
+    }
+}
+.calc{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #000;    
+}
+
+.ttoggler{
+    position:absolute;
+    top: 30px;
+    left: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.ttoggler.active {
+    color: #333;
+}
+
+.ttoggler.active::before{
+    background-color: #fff;
+}
+
+.ttoggler::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: #333;
+    z-index: -1;
+}
+
+#display{
+    margin:0 10px;
+    height: 150px;
+    width:auto;
+    max-width: 270 px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+}
+
+#display::-webkit-scrollbar{
+    display:block;
+    height: 3px;
+}
+
+button{
+    height:60px;
+    width:60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 200 ms ease;
+}
+
+button:hover{
+    transform: scale(1.12);
+}
+
+button#equal {
+    height:60px;
+}
+
+
+.material-symbols-outlined{
+    position:relative;
+    top: 2px;
+    right:11.8px;
+}
+
+
+
+
+.calc{
+    background-color:#fff;    
+}
+
+.calc #display{
+    color: #0a1e23;
+}
+
+.calc button#clr{
+    background-color: #ffc0d3;
+    color: #ff5c8d;
+}
+
+
+.calc button.bno{
+    background-color: #f7d08a;
+    color: #e5890a;
+}
+
+.calc button.bopertaor{
+    background-color: #c9cbff;
+    color: #3ab0ff;
+}
+
+.calc button.bequal{
+    background-color: #ffa0e7;
+    color: #fa4eab;
+}
+
+
+
+
+.calc.dark{
+    background-color: #000000;
+}
+
+.calc.dark button#clr{
+    background-color: #2d191e;
+    color: #bd3740;
+}
+
+.calc.dark #display{
+    color: #24b2ff;
+}
+.calc.dark button.bno{
+    background-color: #5900be;
+    color: #f8fafb;
+}
+
+.calc.dark button.bopertaor{
+    background-color: #3c1558;
+    color: #aa00a4;
+}
+
+.calc.dark button.equal{
+    background-color: #223323;
+    color: #ffffff;
+}
+
+.title{
+    font-size:large;
+    color: #ff2929;
+    display:grid;
+    place-items: center;
+}
+
+
+
+.design{
+    position: relative;
+    top: -50%;
+    font-family: 'Cormorant SC', serif;
+    font-size: 25px;
+    font-weight:600;
+
+}
+
+.social-media ul{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.social-media ul li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social-media ul li .fab{
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color:#000;
+}
+
+.social-media ul li .fab:hover{
+    color: #fff;
+}
+
+.social-media ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-media ul li a:hover{
+    transform: translate(0,-10%);
+}
+
+.social-media ul li:nth-child(1) a:hover{
+    background-color: rgba(0,0,0,.829);
+}
+
+.social-media ul li:nth-child(2) a:hover{
+    background-color: #0077b5;
+}
+
+.social-media ul li:nth-child(2) a:hover{
+    background-color: #0077b5;
+}
+
+.social-media ul li:nth-child(3) a:hover{
+    background-color: #E4405F;
+}
+
+.social-media ul li:nth-child(4) a:hover{
+    background-color: rgb(255, 123, 15);
+}
+
+.social-media ul li:nth-child(5) a:hover{
+    background-color: #24b2ff;
+}
+
+
+
+
